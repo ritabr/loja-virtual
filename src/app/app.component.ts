@@ -10,6 +10,10 @@ export class AppComponent {
   
   constructor(private carrinhoService: CarrinhoService) { }
 
+  get itens() {
+    return this.carrinhoService.itens;
+  }
+
   get total() {
     return this.carrinhoService.total;
   }
