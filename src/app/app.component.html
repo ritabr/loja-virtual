@@ -18,22 +18,22 @@
           aria-expanded="false"
         >
           <i class="bi bi-cart"></i>
-          <span class="badge rounded-pill bg-primary">3</span>
+          <span class="badge rounded-pill bg-primary">
+            {{ quantidade }}
+          </span>
         </button>
         <ul
           class="dropdown-menu dropdown-menu-dark dropdown-menu-end"
           aria-labelledby="dropdownCarrinho"
         >
-          <li class="dropdown-item">R$100,00 - Produto 1</li>
-          <li class="dropdown-item">R$200,00 - Produto 3</li>
-          <li class="dropdown-item">R$150,00 - Produto 2</li>
+          <li class="dropdown-item" *ngIf="quantidade === 0">Carrinho vazio</li>
+          <li class="dropdown-item" *ngFor="let item of itens">
+            {{ item.produto.preco | currency: "BRL" }} ({{ item.quantidade }}x)
+            - {{ item.produto.nome.substr(0, 20) }}...
+          </li>
         </ul>
       </div>
     </form>
   </div>
 </nav>
-<router-outlet></router-outlet>
-
-
-  
 <router-outlet></router-outlet>

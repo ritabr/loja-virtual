@@ -1,0 +1,25 @@
+.td-img {
+    width: 100px;
+}
+.td-col {
+    vertical-align: middle;
+}
+.td-preco {
+    text-align: right;
+    font-weight: bold;
+    padding-right: 20px;
+}
+.total {
+    text-align: right;
+    font-weight: bold;
+    padding-right: 20px;
+}
+.finalizar-compra {
+    text-align: right;
+    font-weight: bold;
+    padding-right: 20px;  
+}
+.titulo {
+    font-size: 30px;
+    text-align: center;  
+}

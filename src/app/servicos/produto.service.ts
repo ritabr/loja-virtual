@@ -11,7 +11,7 @@ export class ProdutoService {
       1,
       'Pc Gamer Level One Amd Ryzen 5 3400g / 16gb Ddr4 / Hd 1tb',
       4200.15,
-      ['pc3.jpg'],
+      ['pc1.jpg'],
       this.getDescricao()
     ),
     new Produto(
