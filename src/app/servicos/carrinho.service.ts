@@ -30,7 +30,10 @@ export class CarrinhoService {
       .reduce((acc: number, preco: number) => acc + preco);
   }
   get quantidade() {
-    if (this.carrinho.itens
+    if (this.carrinho.itens.length ===0) {
+      return 0;
+    }
+      return this.carrinho.itens
       .map((item: ItemCarrinho) => item.quantidade)
       .reduce((acc: number, quantidade: number) => acc + quantidade);
   }
